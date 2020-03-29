@@ -1,0 +1,60 @@
+@font-face{
+    font-family: "Poppins-SemiBold";
+    src: url('./Fonts/Poppins-SemiBold.otf');
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url('./Fonts/Montserrat-SemiBold.otf');
+}
+@font-face{
+    font-family: 'Poppins-Regular';
+    src: url('./Fonts/Poppins-Regular.otf');
+}
+.App{
+    background: url('../images/bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    overflow: hidden;
+    h2{
+        font-family: "Poppins-SemiBold";
+        font-size: 34px;
+        text-transform: uppercase;
+        padding: 5px 0;
+    }
+    .info{
+        h2{
+            font-size: 36px;
+            font-family: 'Montserrat-SemiBold';
+            text-transform: capitalize;
+            @media all and (max-width:767px){
+                font-size: 28px;
+            }
+        }
+        
+        p{
+            font-family: 'Poppins-Regular';
+        }
+        .apps{
+            a{color:#fff;text-decoration:none;}
+            .android{
+                background: #22233A;
+                padding: 10px 25px;
+                text-align:center;
+                width:190px;
+                border-radius: 40px;
+                font-family: 'Montserrat-SemiBold';
+                margin-right:10px;
+                h6{
+                    margin:0;
+                }
+                @media all and (max-width:767px){
+                    width: 160px;
+                    h6{font-size: 12px;}
+                }
+            }
+        }
+    }
+}
+
